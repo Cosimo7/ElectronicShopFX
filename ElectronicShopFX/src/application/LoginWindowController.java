@@ -3,7 +3,6 @@ import model.*;
 import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 
 /**
@@ -49,6 +48,7 @@ public class LoginWindowController {
 	 * @throws IOException
 	 */
 	public void checkLogin() throws IOException {
+		
 		Main m = new Main();
 		User userOne = new User("cosimo", "0000", 0);
 		
@@ -57,7 +57,7 @@ public class LoginWindowController {
 			
 			loginWarning.setText("Success");
 			
-			m.changeScene("UserWindow.fxml");
+			m.changeStage("UserWindow.fxml");
 		
 		} else if((loginUsername.getText().isEmpty() && loginPassword.getText().isEmpty())) {
 				 
