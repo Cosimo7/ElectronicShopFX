@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5F5DC;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.LoginWindowController">
+   <left>
+      <AnchorPane prefHeight="516.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="93.0" fitWidth="200.0" layoutX="7.0" layoutY="66.0" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="66.0">
+               <image>
+                  <Image url="@../images/electronics-2459502_960_720.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="6.0" layoutY="166.0" prefHeight="68.0" prefWidth="202.0" text=" Electronic Shop">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.4904761904761905" startY="0.09523809523809523">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.3457602262496948" green="0.4851364493370056" blue="0.8684210777282715" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.4499348264012324">
+                           <color>
+                              <Color red="0.8500000238418579" green="0.8103333115577698" blue="0.37400001287460327" opacity="0.9869565367698669" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8588235378265381" green="0.8352941274642944" blue="0.3450980484485626" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="9.0" layoutY="215.0" prefHeight="19.0" prefWidth="211.0" text="cosimo.romano@studenti.unipr.it">
+               <font>
+                  <Font name="Courier New Bold" size="11.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.4904761904761905" startY="0.09523809523809523">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.3457602262496948" green="0.4851364493370056" blue="0.8684210777282715" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.4499348264012324">
+                           <color>
+                              <Color red="0.8500000238418579" green="0.8103333115577698" blue="0.37400001287460327" opacity="0.9869565367698669" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8588235378265381" green="0.8352941274642944" blue="0.3450980484485626" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="loginUsername" layoutX="172.0" layoutY="110.0" prefHeight="34.0" prefWidth="168.0" promptText="insert your username" />
+            <PasswordField fx:id="loginPassword" layoutX="172.0" layoutY="175.0" prefHeight="34.0" prefWidth="169.0" promptText="insert your password" />
+            <Label layoutX="83.0" layoutY="118.0" prefHeight="19.0" prefWidth="79.0" text="Username" textFill="#587bdb">
+               <font>
+                  <Font name="Courier New Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="182.0" prefHeight="19.0" prefWidth="79.0" text="Password" textFill="#587bdb">
+               <font>
+                  <Font name="Courier New Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="loginWarning" layoutX="24.0" layoutY="56.0" prefHeight="20.0" prefWidth="336.0" textFill="#587bdb">
+               <font>
+                  <Font name="Courier New Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="userButton" layoutX="128.0" layoutY="251.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="39.0" prefWidth="116.0" text="User login" textFill="#587bdb">
+               <font>
+                  <Font name="Courier New Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="employeeButton" layoutX="128.0" layoutY="303.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="118.0" text="Employee login" textFill="#587bdb">
+               <font>
+                  <Font name="Courier New Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
